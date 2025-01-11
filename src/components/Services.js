@@ -52,7 +52,7 @@ export default function Services() {
               </h3>
               <p className="services__modal-description text-center text-[length:var(--small-font-size)] pl-10 pr-10 mb-[var(--mb-2)] sm:p-0">
                 With a strong foundation as a web designer built over the past
-                year, I specialize in creating visually compelling and
+                years, I specialize in creating visually compelling and
                 user-friendly websites tailored to enhance your brand's online
                 presence. Committing to delivering high-quality designs that
                 ensures your business to stand out in the digital landscape.
@@ -131,9 +131,9 @@ export default function Services() {
                 UI/UX Designer
               </h3>
               <p className="services__modal-description text-center text-[length:var(--small-font-size)] pl-10 pr-10 mb-[var(--mb-2)] sm:p-0">
-                As a UI/UX designer with almost a year of experience, I bring a
-                deep understanding of user behavior to craft interfaces that are
-                not only visually striking but also highly intuitive. My
+                As a UI/UX designer with almost two years of experience, I bring
+                a deep understanding of user behavior to craft interfaces that
+                are not only visually striking but also highly intuitive. My
                 approach ensures that your digital products stand out by
                 offering a seamless blend of form and function, driving both
                 user engagement and business growth.
@@ -212,7 +212,7 @@ export default function Services() {
                 Web Developer
               </h3>
               <p className="services__modal-description text-center text-[length:var(--small-font-size)] pl-10 pr-10 mb-[var(--mb-2)] sm:p-0">
-                Being a web developer with nearly a year of experience, I
+                Being a web developer with nearly two years of experience, I
                 specialize in creating robust, high-performance websites that
                 are both visually appealing and technically sound. My focus on
                 clean, efficient code ensures your website not only looks great

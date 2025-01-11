@@ -19,13 +19,13 @@ export default function About() {
           <Info />
 
           <p className="about_description pr-16 mb-[var(--mb-2-5)] lg:text-center min-[769px]:p-20 lg:mb-8 md:p-0">
-            I am a web developer with a strong focus on frontend development,
-            specializing in creating innovative and engaging UI/UX designs. My
-            expertise lies in crafting visually appealing and user-friendly
-            interfaces that attract and retain clients. With a keen eye for
-            detail and a passion for modern web technologies, I consistently
-            deliver high-quality, responsive, and aesthetically pleasing web
-            solutions.
+            I am a web developer with a strong focus on both frontend & backend
+            development, specializing in creating innovative and engaging UI/UX
+            designs. My expertise lies in crafting visually appealing and
+            user-friendly interfaces that attract and retain clients. With a
+            keen eye for detail and a passion for modern web technologies, I
+            consistently deliver high-quality, responsive, and aesthetically
+            pleasing web solutions.
           </p>
 
           <a href={cv} download="" className="button button--flex">

@@ -38,7 +38,7 @@ export default function Frontend() {
                 JavaScript
               </h3>
               <span className="skills__level text-[length:var(--tiny-font-size)]">
-                Intermediate
+                Advanced
               </span>
             </div>
           </div>
@@ -64,7 +64,7 @@ export default function Frontend() {
                 React JS
               </h3>
               <span className="skills__level text-[length:var(--tiny-font-size)]">
-                Intermediate
+                Advanced
               </span>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function Frontend() {
                 Next JS
               </h3>
               <span className="skills__level text-[length:var(--tiny-font-size)]">
-                Intermediate
+                Advanced
               </span>
             </div>
           </div>

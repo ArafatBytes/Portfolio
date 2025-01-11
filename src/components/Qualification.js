@@ -77,7 +77,7 @@ export default function Qualification() {
                   Online - LWS
                 </span>
                 <div className="qualification__calender text-[length:var(--small-font-size)]">
-                  <i class="uil uil-calendar-alt"></i>2024-present
+                  <i class="uil uil-calendar-alt"></i>2023-present
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@ export default function Qualification() {
                   Fiverr - Intl Client
                 </span>
                 <div className="qualification__calender text-[length:var(--small-font-size)]">
-                  <i class="uil uil-calendar-alt"></i>2024-present
+                  <i class="uil uil-calendar-alt"></i>2023-present
                 </div>
               </div>
 
@@ -165,7 +165,7 @@ export default function Qualification() {
                   Fiverr - Intl Client
                 </span>
                 <div className="qualification__calender text-[length:var(--small-font-size)]">
-                  <i class="uil uil-calendar-alt"></i>2024-present
+                  <i class="uil uil-calendar-alt"></i>2023-present
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function Qualification() {
                   Fiverr - Intl Client
                 </span>
                 <div className="qualification__calender text-[length:var(--small-font-size)]">
-                  <i class="uil uil-calendar-alt"></i>2024-present
+                  <i class="uil uil-calendar-alt"></i>2023-present
                 </div>
               </div>
 

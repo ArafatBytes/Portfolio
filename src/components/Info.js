@@ -7,7 +7,7 @@ export default function Info() {
           Experience
         </h3>
         <span className="about__subtitle text-[length:var(--tiny-font-size)]">
-          1+ Year
+          2+ Years
         </span>
       </div>
 
@@ -17,7 +17,7 @@ export default function Info() {
           Completed
         </h3>
         <span className="about__subtitle text-[length:var(--tiny-font-size)]">
-          10+ Projects
+          15+ Projects
         </span>
       </div>
 

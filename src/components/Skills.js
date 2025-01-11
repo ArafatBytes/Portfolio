@@ -1,5 +1,6 @@
 import Backend from "./Backend";
 import Frontend from "./Frontend";
+import Database from "./Database";
 
 export default function Skills() {
   return (
@@ -10,6 +11,7 @@ export default function Skills() {
       <div className="skills__container container1 grid gap-6 grid-cols-[23.5rem_23.5rem] gap-x-12 justify-center lg:grid-cols-[max-content] lg:gap-y-8">
         <Frontend />
         <Backend />
+        <Database />
       </div>
     </section>
   );
