@@ -7,6 +7,7 @@ import repospector from "../assets/repospector.png";
 import wraptrap from "../assets/wraptrap.png";
 import chat from "../assets/chat.png";
 import store from "../assets/store.png";
+import enlighten from "../assets/enlighten.png";
 
 export const projectsData = [
   {
@@ -23,42 +24,48 @@ export const projectsData = [
   },
   {
     id: 3,
+    image: enlighten,
+    title: "Enlighten - Language learning website",
+    link: "https://language-exchange-app.netlify.app/",
+  },
+  {
+    id: 4,
     image: wraptrap,
     title: "Food delivery website",
     link: "https://arafatbytes.github.io/WrapTrap/",
   },
   {
-    id: 4,
+    id: 5,
     image: chat,
     title: "Chat application",
     link: "https://chat-app-clone.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     image: quiz,
     title: "Quiz App",
     link: "https://bright-buttercream-117a88.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     image: store,
     title: "Product Store App",
     link: "https://product-store-seven-gilt.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     image: calculator,
     title: "Calculator Project",
     link: "https://arafatbytes.github.io/Brain-Calculator/",
   },
   {
-    id: 8,
+    id: 9,
     image: sketch,
     title: "Etch a Sketch",
     link: "https://arafatbytes.github.io/Etch-A-Sketch/",
   },
   {
-    id: 9,
+    id: 10,
     image: recipe,
     title: "Recipe Solution",
     link: "https://arafatbytes.github.io/Odin-Recipes/",
