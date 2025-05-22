@@ -12,7 +12,7 @@ export const projectsData = [
     id: 1,
     image: simpleswapp,
     title: "Crypto exchange website",
-    link: "https://simple2swap.vercel.app/",
+    link: "https://simple-swap-clone.vercel.app/exchange"
   },
   {
     id: 2,
