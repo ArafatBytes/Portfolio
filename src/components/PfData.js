@@ -6,13 +6,14 @@ import simpleswapp from "../assets/simpleswap.png";
 import repospector from "../assets/repospector.png";
 import wraptrap from "../assets/wraptrap.png";
 import chat from "../assets/chat.png";
+import store from "../assets/store.png";
 
 export const projectsData = [
   {
     id: 1,
     image: simpleswapp,
     title: "Crypto exchange website",
-    link: "https://simple-swap-clone.vercel.app/exchange"
+    link: "https://simple-swap-clone.vercel.app/exchange",
   },
   {
     id: 2,
@@ -40,18 +41,24 @@ export const projectsData = [
   },
   {
     id: 6,
+    image: store,
+    title: "Product Store App",
+    link: "https://product-store-seven-gilt.vercel.app/",
+  },
+  {
+    id: 7,
     image: calculator,
     title: "Calculator Project",
     link: "https://arafatbytes.github.io/Brain-Calculator/",
   },
   {
-    id: 7,
+    id: 8,
     image: sketch,
     title: "Etch a Sketch",
     link: "https://arafatbytes.github.io/Etch-A-Sketch/",
   },
   {
-    id: 8,
+    id: 9,
     image: recipe,
     title: "Recipe Solution",
     link: "https://arafatbytes.github.io/Odin-Recipes/",
