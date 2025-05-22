@@ -24,7 +24,7 @@ export const projectsData = [
     id: 3,
     image: wraptrap,
     title: "Food delivery website",
-    link: "https://www.sikhdocs.org/",
+    link: "https://arafatbytes.github.io/WrapTrap/",
   },
   {
     id: 4,
