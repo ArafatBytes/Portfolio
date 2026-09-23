@@ -4,30 +4,30 @@ export default function Info() {
       <div className="about__box bg-[var(--container-color)] border-[1px] border-[rgba(0,0,0,0.1)] rounded-xl text-center pt-4 pb-4 pl-5 pr-5 lg:pt-3 lg:pb-3 lg:pl-2 lg:pr-2">
         <i className="bx bx-award text-2xl text-[var(--title-color)] mb-[var(--mb-0-5)]"></i>
         <h3 className="about__title text-[length:var(--small-font-size)] font-[var(--font-medium)]">
-          Experience
+          3+ Years
         </h3>
         <span className="about__subtitle text-[length:var(--tiny-font-size)]">
-          2+ Years
+          Experience
         </span>
       </div>
 
       <div className="about__box bg-[var(--container-color)] border-[1px] border-[rgb(0,0,0,0.1)] rounded-xl text-center pt-4 pb-4 pl-5 pr-5 lg:pt-3 lg:pb-3 lg:pl-2 lg:pr-2">
         <i className="bx bx-briefcase-alt text-2xl text-[var(--title-color)] mb-[var(--mb-0-5)]"></i>
         <h3 className="about__title text-[length:var(--small-font-size)] font-[var(--font-medium)]">
-          Completed
+          30+ Projects
         </h3>
         <span className="about__subtitle text-[length:var(--tiny-font-size)]">
-          15+ Projects
+          Completed
         </span>
       </div>
 
       <div className="about__box bg-[var(--container-color)] border-[1px] border-[rgb(0,0,0,0.1)] rounded-xl text-center pt-4 pb-4 pl-5 pr-5 lg:pt-3 lg:pb-3 lg:pl-2 lg:pr-2">
         <i className="bx bx-support text-2xl text-[var(--title-color)] mb-[var(--mb-0-5)]"></i>
         <h3 className="about__title text-[length:var(--small-font-size)] font-[var(--font-medium)]">
-          Support
+          Online 24/7
         </h3>
         <span className="about__subtitle text-[length:var(--tiny-font-size)]">
-          Online 24/7
+          Support
         </span>
       </div>
     </div>

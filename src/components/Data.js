@@ -2,8 +2,8 @@ import "../index.css";
 
 export default function Data() {
   return (
-    <div className="home_data md:col-[1/3]">
-      <h1 className="home_title flex items-center gap-x-4 text-[length:var(--big-font-size)] font-[var(--font-semi-bold)] mb-[var(--mb-0-25)]">
+    <div className="home_data lg:col-[1/3] md:col-auto md:text-center">
+      <h1 className="home_title flex items-center gap-x-4 text-[length:var(--big-font-size)] font-[var(--font-semi-bold)] mb-[var(--mb-0-25)] md:justify-center">
         Arafat Ullah
         <svg
           width="36"
@@ -11,7 +11,7 @@ export default function Data() {
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="home__hand h-9 w-9 ml-2 lg:h-7 lg:w-7"
+          className="home__hand h-9 w-9 ml-2 lg:h-7 lg:w-7"
         >
           <path
             d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z"
@@ -55,19 +55,16 @@ export default function Data() {
           ></path>
         </svg>
       </h1>
-      <h3 className="home_subtitle relative text-[length:var(--h3-font-size)] font-[var(--font-normal)] mb-[var(--mb-1)] pl-20 before:content-[''] before:absolute before:bg-[var(--text-color)] before:h-[1px] before:w-16 before:left-0 before:top-4 lg:pl-14 lg:before:w-12 lg:before:top-3">
+      <h3 className="home_subtitle relative text-[length:var(--h3-font-size)] font-[var(--font-normal)] mb-[var(--mb-1)] pl-20 before:content-[''] before:absolute before:bg-[var(--text-color)] before:h-[1px] before:w-16 before:left-0 before:top-4 lg:pl-14 lg:before:w-12 lg:before:top-3 md:pl-0 md:before:hidden">
         Web Developer
       </h3>
-      <p className="home_description mb-[var(--mb-3)] lg:mb-[var(--mb-2-5)] max-w-[initial]">
-        Aspiring web developer with a strong focus on creating dynamic,
-        user-friendly web applications using the latest technologies. Dedicated
-        to delivering clean, efficient code and innovative solutions to meet
-        client needs.
+      <p className="home_description mb-[var(--mb-3)] lg:mb-[var(--mb-2-5)] max-w-[initial] md:mx-auto">
+        I engineer premium, high-performance web experiences. By combining cutting-edge technologies with striking design, I transform your vision into intuitive, scalable digital products that captivate users and drive real business growth.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello
         <svg
-          class="button__icon"
+          className="button__icon"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

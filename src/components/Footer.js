@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer bg-[var(--container-color)] border-t-[1px] border-t-[color:rgba(0,0,0,0.1)]">
+    <footer className="footer bg-[var(--glass-bg)] backdrop-blur-md border-t border-[var(--glass-border)] mt-8">
       <div className="footer__container container1 pt-8 pb-24">
         <h1 className="footer__title text-[color:var(--title-color)] text-center mb-[var(--mb-2)] font-[var(--font-semi-bold)] text-[length:var(--h1-font-size)]">
           Arafat

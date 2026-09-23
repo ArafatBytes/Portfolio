@@ -5,15 +5,19 @@
 :root {
   --header-height: 3rem;
 
-  /*========== Colors ==========*/
+/*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 0;
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 20%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --body-color: #f0f2f5; /* Soft grey-blue to provide contrast for glass */
   --container-color: #fff;
+  --glass-bg: rgba(255, 255, 255, 0.5); /* More translucent white */
+  --glass-border: rgba(255, 255, 255, 0.8); /* Crisp white edge */
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1); /* Deep glass shadow */
+  --modal-overlay: rgba(255, 255, 255, 0.5);
 
   /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
@@ -48,6 +52,18 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+}
+
+.dark {
+  --title-color: hsl(var(--hue), var(--sat), 95%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color: hsl(var(--hue), var(--sat), 75%);
+  --body-color: hsl(var(--hue), var(--sat), 8%);
+  --container-color: hsl(var(--hue), var(--sat), 12%);
+  --glass-bg: rgba(0, 0, 0, 0.4);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+  --modal-overlay: rgba(0, 0, 0, 0.6);
 }
 
 /* Responsive typography */
@@ -85,6 +101,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 h1,
@@ -116,6 +133,8 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 6rem 1rem 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .section__title {

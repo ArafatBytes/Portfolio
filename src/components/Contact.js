@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const form = useRef();
@@ -14,7 +15,14 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact section" id="contact">
+    <motion.section 
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      className="contact section" 
+      id="contact"
+    >
       <h2 className="section__title font-[var(--font-semi-bold)]">
         Contact Me
       </h2>
@@ -27,7 +35,7 @@ export default function Contact() {
           </h3>
 
           <div className="contact__info grid gap-y-4 grid-cols-[18.75rem] md:justify-center">
-            <div className="contact__card bg-[var(--container-color)] border-[1px] border-[rgba(0,0,0,0.1)] p-4 text-center rounded-xl">
+            <div className="contact__card bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-4 text-center rounded-xl transition-transform hover:-translate-y-2 duration-300">
               <i class="bx bx-mail-send text-[var(--title-color)] text-[length:2rem] mb-[var(--mb-0-25)]"></i>
               <h3 className="contact__card-title text-[var(--title-color)] font-[var(--font-medium text-[length:var(--small-font-size)])]">
                 Email
@@ -46,7 +54,7 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="contact__card bg-[var(--container-color)] border-[1px] border-[rgba(0,0,0,0.1)] p-4 text-center rounded-xl">
+            <div className="contact__card bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-4 text-center rounded-xl transition-transform hover:-translate-y-2 duration-300">
               <i class="bx bxl-whatsapp text-[var(--title-color)] text-[length:2rem] mb-[var(--mb-0-25)]"></i>
               <h3 className="contact__card-title text-[var(--title-color)] font-[var(--font-medium text-[length:var(--small-font-size)])]">
                 Whatsapp
@@ -65,7 +73,7 @@ export default function Contact() {
               </a>
             </div>
 
-            <div className="contact__card bg-[var(--container-color)] border-[1px] border-[rgba(0,0,0,0.1)] p-4 text-center rounded-xl">
+            <div className="contact__card bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] p-4 text-center rounded-xl transition-transform hover:-translate-y-2 duration-300">
               <i class="bx bxl-messenger text-[var(--title-color)] text-[length:2rem] mb-[var(--mb-0-25)]"></i>
               <h3 className="contact__card-title text-[var(--title-color)] font-[var(--font-medium text-[length:var(--small-font-size)])]">
                 Messenger
@@ -156,6 +164,6 @@ export default function Contact() {
           </form>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

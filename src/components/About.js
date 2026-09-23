@@ -1,37 +1,53 @@
 import Info from "./Info";
 import aboutImage from "../assets/about.jpg";
 import cv from "../assets/cv.pdf";
+import { motion } from "framer-motion";
 
 export default function About() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.2 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+  };
+
   return (
-    <section className="about section" id="about">
-      <h2 className="section__title font-[var(--font-semi-bold)]">About Me</h2>
-      <span className="section__subtitle">My introduction</span>
+    <motion.section 
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.2 }}
+      className="about section" 
+      id="about"
+    >
+      <motion.h2 variants={itemVariants} className="section__title font-[var(--font-semi-bold)]">About Me</motion.h2>
+      <motion.span variants={itemVariants} className="section__subtitle">My introduction</motion.span>
 
       <div className="about_container container1 grid gap-6 grid-cols-[1fr_1fr] gap-x-16 items-center lg:grid-cols-[1fr] gap-y-10">
-        <img
+        <motion.img
+          variants={itemVariants}
           src={aboutImage}
           alt="about"
           className="about_img h-[22rem] rounded-3xl justify-self-center lg:h-56"
-        ></img>
+        />
 
         <div className="about_data lg:text-center">
-          <Info />
+          <motion.div variants={itemVariants}><Info /></motion.div>
 
-          <p className="about_description pr-16 mb-[var(--mb-2-5)] lg:text-center min-[769px]:p-20 lg:mb-8 md:p-0">
-            I am a web developer with a strong focus on both frontend & backend
-            development, specializing in creating innovative and engaging UI/UX
-            designs. My expertise lies in crafting visually appealing and
-            user-friendly interfaces that attract and retain clients. With a
-            keen eye for detail and a passion for modern web technologies, I
-            consistently deliver high-quality, responsive, and aesthetically
-            pleasing web solutions.
-          </p>
+          <motion.p variants={itemVariants} className="about_description pr-16 mb-[var(--mb-2-5)] lg:text-center min-[769px]:p-20 lg:mb-8 md:p-0">
+            I am a full-stack engineer and UI/UX specialist dedicated to building digital products that leave a lasting impression. From crafting pixel-perfect, glassmorphic interfaces to architecting robust backend systems, my expertise covers the entire development lifecycle. I don't just write code; I solve complex problems and deliver aesthetic, highly responsive solutions that elevate brands, engage users, and outpace the competition.
+          </motion.p>
 
-          <a href={cv} download="" className="button button--flex">
+          <motion.a variants={itemVariants} href={cv} download="" className="button button--flex">
             Download CV
             <svg
-              class="button__icon"
+              className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
@@ -55,9 +71,9 @@ export default function About() {
                 fill="var(--container-color)"
               ></path>
             </svg>
-          </a>
+          </motion.a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
